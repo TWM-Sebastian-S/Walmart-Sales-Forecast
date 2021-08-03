@@ -29,20 +29,23 @@ In this recruiting competition, job-seekers are provided with historical sales d
 ## Code and resources used
 **Python Version:** 3.7
 
-**Packages:** Pandas / Numpy / Seaborn / Scikitlearn / ARIMA / 
+**Packages:** Pandas / Numpy / Seaborn / Scikitlearn / statsmodels / 
 
 **ML Resources:** Logistic Regression / Gradient Boosting / Cross-validation / AUC / ROC / Confusion Matrix
 
 
 ## Model Building
 
-
+- With an ARIMA model, you can forecast a time series using the series past values.
+- If you use only the previous values of the time series to predict its future values, it is called Univariate Time Series Forecasting.
+- If you use predictors other than the series (a.k.a exogenous variables) to forecast it is called Multi Variate Time Series Forecasting.
+- ARIMA, short for ‘Auto Regressive Integrated Moving Average’ is actually a class of models that ‘explains’ a given time series based on its own past values, that is, its own     lags and the lagged forecast errors, so that equation can be used to forecast future values.
 
 ## Model Performance
 
-I tried three different models and evaluated them using RMSE.
+I evaluated the performance of the models based on RMSE.
 
-![]( "Picture")
+![Model Comparison](https://github.com/TWM-Sebastian-S/Walmart-Sales-Forecast/blob/main/Comparison%20of%20different%20models.JPG "Model Comparison")
 
 
 ## Conclusion
